@@ -1,13 +1,8 @@
 let voice = new p5.Speech(); 
-let speechRec = new p5.SpeechRec(gotSpeech); 
 let naam;
 let achternaam;
 
 
-function gotSpeech()
-{
-    
-}
 
 
 function add_settings() {

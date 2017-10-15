@@ -16,6 +16,9 @@ function add_settings() {
    
    localStorage.setItem("username", naam);
    localStorage.setItem("achternaam", achternaam);
+   
+   window.open("public/index.html")
+   
     
 }
 
@@ -27,4 +30,3 @@ function welkom()
 }
 
 
-welkom()

@@ -12,8 +12,15 @@ function gotSpeech()
 function add_settings() {
    naam = document.getElementById("naam").value;
    
-   voice.speak("hallo " + naam)
+   localStorage.setItem("username", naam);
     
 }
 
+function welkom()
+{
+    naam = localStorage.getItem("username");
+    voice.speak("hallo " + naam + "leuk dat je er weer bent")
+}
 
+
+welkom()

@@ -1,6 +1,12 @@
-var speechRec = new p5.SpeechRec(gotSpeech); // speech recognition object (will prompt for mic access)
-speechRec.start(); // start listening
+var myRec = new p5.SpeechRec(goSpeech); // new P5.SpeechRec object
+myRec.continuous = true; // do continuous recognition
+myRec.interimResults = true; // allow partial recognition (faster, less accurate)
 
-function gotSpeech(speech) {
-  console.log(speech.text); // log the result
+
+myRec.start(); 
+
+function goSpeech(praat) {
+    console.log(praat.text)
 }
+
+welkom()

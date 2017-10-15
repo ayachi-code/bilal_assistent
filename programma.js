@@ -3,8 +3,6 @@ let naam;
 let achternaam;
 
 
-
-
 function add_settings() {
    naam = document.getElementById("naam").value;
    achternaam = document.getElementById("achternaam").value;
